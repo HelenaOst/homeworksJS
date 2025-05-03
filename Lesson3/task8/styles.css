@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.users-box{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 20px;
+    margin: 10px 10px;
+}
+.user-box {
+    /*width: 500px;*/
+    border: black 1px solid;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f4f4f4;
+    gap: 20px;
+}
