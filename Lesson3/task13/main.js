@@ -16,5 +16,5 @@ let arr = [
 ]
 
 for (let x of arr) {
-
+console.log(x);
 }
