@@ -47,3 +47,23 @@ let citiesWithId = [
     { user_id: 2, country: 'Poland', city: 'Krakow' },
     { user_id: 4, country: 'USA', city: 'Miami' }
 ];
+
+
+let usersWithCities = [];
+
+for (let i = 0; i < usersWithId.length; i++) {
+    let user = usersWithId[i];
+    for (let j = 0; j < citiesWithId.length; j++) {
+        let city = citiesWithId[j];
+        if (user.id === city.user_id) {
+            user.address = city;   // створюємо новий об'єкт користувача з доданим містом
+            usersWithCities.push(user);
+        }
+    }
+}
+console.log(usersWithCities);
+
+//в JavaScript:
+// Якщо поле ще не існує, ти можеш просто написати об'єкт.новеПоле = значення, і воно буде створене автоматично.
+//
+// Це одна з гнучких фішок JavaScript-об’єктів.
